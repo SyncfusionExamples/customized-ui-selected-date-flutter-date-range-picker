@@ -22,8 +22,8 @@ child: SfDateRangePicker(
 Please find entire code snippet for the same.
 
 ```xml
-import 'dart:ui';
 
+import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
