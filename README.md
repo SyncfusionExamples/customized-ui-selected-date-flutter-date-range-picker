@@ -70,6 +70,6 @@ class _SelectedCellState extends State<SelectedCell> {
 
 **[View document in Syncfusion Flutter Knowledge base](https://www.syncfusion.com/kb/11441/how-to-customize-the-selected-month-cell-in-the-flutter-date-range-picker-sfdaterangepicker)**
 
-**Screenshots**
+**Screenshot**
 
 ![seleced cell customization](http://www.syncfusion.com/uploads/user/kb/flut/flut-863/flut-863_img1.png)
