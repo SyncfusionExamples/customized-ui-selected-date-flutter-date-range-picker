@@ -72,4 +72,4 @@ class _SelectedCellState extends State<SelectedCell> {
 
 **Screenshot**
 
-<img alt="seleced cell customization"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-863/flut-863_img1.png" width="250" height="250" />|
+<img alt="seleced cell customization"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-863/flut-863_img1.png" width="230" height="250" />|
