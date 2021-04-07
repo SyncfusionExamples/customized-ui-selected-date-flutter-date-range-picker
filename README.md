@@ -1,6 +1,6 @@
 # How to customize the selected month cell in Flutter date range picker (SfDateRangePicker)?
 
-In the Flutter date range picker, you can customize the selected cell using the `selectionTextStyle` property of `DateRangePickerMonthCellStyle` in the date picker.
+In the Flutter date range picker, you can customize the selected cell using the `selectionTextStyle` property of `SfDateRangePicker` in the date picker.
 ## Step 1: 
 Using the `selectionTextStyle` property, you can customize the selected cell. 
 
@@ -8,12 +8,13 @@ Using the `selectionTextStyle` property, you can customize the selected cell.
 child: SfDateRangePicker(
   view: DateRangePickerView.month,
   selectionShape: DateRangePickerSelectionShape.rectangle,
+  selectionTextStyle: TextStyle(
+    color: Colors.red,
+    decoration: TextDecoration.underline,
+  ),
+  selectionColor: Colors.amber,
   monthCellStyle: DateRangePickerMonthCellStyle(
-    selectionTextStyle:
-        TextStyle(color: Colors.red, fontStyle: FontStyle.italic,decoration: TextDecoration.underline,),
-    selectionColor: Colors.amber,
-    textStyle: TextStyle(fontSize: 15,color: Colors.black),
-
+    textStyle: TextStyle(fontSize: 15, color: Colors.black),
   ),
 ),
 ```
@@ -55,12 +56,13 @@ class _SelectedCellState extends State<SelectedCell> {
       child: SfDateRangePicker(
         view: DateRangePickerView.month,
         selectionShape: DateRangePickerSelectionShape.rectangle,
+        selectionTextStyle: TextStyle(
+            color: Colors.red,
+            decoration: TextDecoration.underline,
+        ),
+        selectionColor: Colors.amber,
         monthCellStyle: DateRangePickerMonthCellStyle(
-          selectionTextStyle:
-              TextStyle(color: Colors.red,decoration: TextDecoration.underline,),
-          selectionColor: Colors.amber,
-          textStyle: TextStyle(fontSize: 15,color: Colors.black),
-
+          textStyle: TextStyle(fontSize: 15, color: Colors.black),
         ),
       ),
     ));
