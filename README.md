@@ -1,6 +1,6 @@
 # How to customize the selected month cell in Flutter date range picker (SfDateRangePicker)?
 
-In the Flutter date range picker, you can customize the selected cell using the `selectionTextStyle` property of `DateRangePickerMonthCellStyle` in the date picker.
+In the Flutter date range picker, you can customize the selected cell using the `selectionTextStyle` property of `SfDateRangePicker` in the date picker.
 ## Step 1: 
 Using the `selectionTextStyle` property, you can customize the selected cell. 
 
