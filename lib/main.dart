@@ -22,7 +22,7 @@ class SelectedCell extends StatefulWidget {
   _SelectedCellState createState() => _SelectedCellState();
 }
 
-class _SelectedCellState extends State<SelectedCell> { 
+class _SelectedCellState extends State<SelectedCell> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,12 +31,13 @@ class _SelectedCellState extends State<SelectedCell> {
       child: SfDateRangePicker(
         view: DateRangePickerView.month,
         selectionShape: DateRangePickerSelectionShape.rectangle,
+        selectionTextStyle: TextStyle(
+          color: Colors.red,
+          decoration: TextDecoration.underline,
+        ),
+        selectionColor: Colors.amber,
         monthCellStyle: DateRangePickerMonthCellStyle(
-          selectionTextStyle:
-              TextStyle(color: Colors.red,decoration: TextDecoration.underline,),
-          selectionColor: Colors.amber,
-          textStyle: TextStyle(fontSize: 15,color: Colors.black),
-
+          textStyle: TextStyle(fontSize: 15, color: Colors.black),
         ),
       ),
     ));

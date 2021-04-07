@@ -8,12 +8,13 @@ Using the `selectionTextStyle` property, you can customize the selected cell.
 child: SfDateRangePicker(
   view: DateRangePickerView.month,
   selectionShape: DateRangePickerSelectionShape.rectangle,
+  selectionTextStyle: TextStyle(
+    color: Colors.red,
+    decoration: TextDecoration.underline,
+  ),
+  selectionColor: Colors.amber,
   monthCellStyle: DateRangePickerMonthCellStyle(
-    selectionTextStyle:
-        TextStyle(color: Colors.red, fontStyle: FontStyle.italic,decoration: TextDecoration.underline,),
-    selectionColor: Colors.amber,
-    textStyle: TextStyle(fontSize: 15,color: Colors.black),
-
+    textStyle: TextStyle(fontSize: 15, color: Colors.black),
   ),
 ),
 ```
@@ -55,12 +56,13 @@ class _SelectedCellState extends State<SelectedCell> {
       child: SfDateRangePicker(
         view: DateRangePickerView.month,
         selectionShape: DateRangePickerSelectionShape.rectangle,
+        selectionTextStyle: TextStyle(
+            color: Colors.red,
+            decoration: TextDecoration.underline,
+        ),
+        selectionColor: Colors.amber,
         monthCellStyle: DateRangePickerMonthCellStyle(
-          selectionTextStyle:
-              TextStyle(color: Colors.red,decoration: TextDecoration.underline,),
-          selectionColor: Colors.amber,
-          textStyle: TextStyle(fontSize: 15,color: Colors.black),
-
+          textStyle: TextStyle(fontSize: 15, color: Colors.black),
         ),
       ),
     ));
